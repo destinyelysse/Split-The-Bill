@@ -11,7 +11,7 @@ import SwiftUI
 struct Split_The_BillApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HowToSplit()
         }
     }
 }

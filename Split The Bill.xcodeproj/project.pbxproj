@@ -7,16 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F734DD7E254150BF002ED5E1 /* HowToSplit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F734DD7D254150BF002ED5E1 /* HowToSplit.swift */; };
+		F734DD8125415687002ED5E1 /* PercentageSplit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F734DD8025415687002ED5E1 /* PercentageSplit.swift */; };
+		F734DD84254156C3002ED5E1 /* ItemizedSplit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F734DD83254156C3002ED5E1 /* ItemizedSplit.swift */; };
+		F734DD87254156FC002ED5E1 /* CustomSplit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F734DD86254156FC002ED5E1 /* CustomSplit.swift */; };
 		F7AFC9EE253FFFF800C4F9A8 /* Split_The_BillApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AFC9ED253FFFF800C4F9A8 /* Split_The_BillApp.swift */; };
-		F7AFC9F0253FFFF800C4F9A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AFC9EF253FFFF800C4F9A8 /* ContentView.swift */; };
+		F7AFC9F0253FFFF800C4F9A8 /* SimpleSplit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AFC9EF253FFFF800C4F9A8 /* SimpleSplit.swift */; };
 		F7AFC9F2253FFFFA00C4F9A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7AFC9F1253FFFFA00C4F9A8 /* Assets.xcassets */; };
 		F7AFC9F5253FFFFA00C4F9A8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7AFC9F4253FFFFA00C4F9A8 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F734DD7D254150BF002ED5E1 /* HowToSplit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToSplit.swift; sourceTree = "<group>"; };
+		F734DD8025415687002ED5E1 /* PercentageSplit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentageSplit.swift; sourceTree = "<group>"; };
+		F734DD83254156C3002ED5E1 /* ItemizedSplit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemizedSplit.swift; sourceTree = "<group>"; };
+		F734DD86254156FC002ED5E1 /* CustomSplit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSplit.swift; sourceTree = "<group>"; };
 		F7AFC9EA253FFFF800C4F9A8 /* Split The Bill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Split The Bill.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7AFC9ED253FFFF800C4F9A8 /* Split_The_BillApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Split_The_BillApp.swift; sourceTree = "<group>"; };
-		F7AFC9EF253FFFF800C4F9A8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F7AFC9EF253FFFF800C4F9A8 /* SimpleSplit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSplit.swift; sourceTree = "<group>"; };
 		F7AFC9F1253FFFFA00C4F9A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7AFC9F4253FFFFA00C4F9A8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F7AFC9F6253FFFFA00C4F9A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,7 +61,11 @@
 			isa = PBXGroup;
 			children = (
 				F7AFC9ED253FFFF800C4F9A8 /* Split_The_BillApp.swift */,
-				F7AFC9EF253FFFF800C4F9A8 /* ContentView.swift */,
+				F734DD7D254150BF002ED5E1 /* HowToSplit.swift */,
+				F7AFC9EF253FFFF800C4F9A8 /* SimpleSplit.swift */,
+				F734DD8025415687002ED5E1 /* PercentageSplit.swift */,
+				F734DD83254156C3002ED5E1 /* ItemizedSplit.swift */,
+				F734DD86254156FC002ED5E1 /* CustomSplit.swift */,
 				F7AFC9F1253FFFFA00C4F9A8 /* Assets.xcassets */,
 				F7AFC9F6253FFFFA00C4F9A8 /* Info.plist */,
 				F7AFC9F3253FFFFA00C4F9A8 /* Preview Content */,
@@ -138,7 +150,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7AFC9F0253FFFF800C4F9A8 /* ContentView.swift in Sources */,
+				F7AFC9F0253FFFF800C4F9A8 /* SimpleSplit.swift in Sources */,
+				F734DD84254156C3002ED5E1 /* ItemizedSplit.swift in Sources */,
+				F734DD7E254150BF002ED5E1 /* HowToSplit.swift in Sources */,
+				F734DD87254156FC002ED5E1 /* CustomSplit.swift in Sources */,
+				F734DD8125415687002ED5E1 /* PercentageSplit.swift in Sources */,
 				F7AFC9EE253FFFF800C4F9A8 /* Split_The_BillApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
