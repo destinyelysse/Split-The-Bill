@@ -9,28 +9,32 @@ import SwiftUI
 
 struct HowToSplit: View {
     
+//    var splitOptions = [
+//    ["Simple Split", SimpleSplit()],
+//    ["Percentage Split", PercentageSplit()],
+//    ["Itemized Split", ItemizedSplit()],
+//    ["Custom Split", CustomSplit()]
+//    ]
+    
+    var splitOptions = ["Simple Split", "Percentage Split", "Itemized Split", "Custom Split"]
+    
+    @State private var selectedSplit = 0
+    @State private var totalSplitters = "0"
+    
     var body: some View {
         NavigationView {
-            VStack{
-                Text("Let's split the Bill!")
-                Text ("What kind of split?")
-                NavigationLink (
-                    destination: SimpleSplit()) {
-                    Text ("Simple Split")
+            Form{
+                Text("How many splitters?")
+                TextField("How many people?", text: $totalSplitters)
+                    .keyboardType(.numberPad)
+                Picker("What kind of split?", selection: $selectedSplit) {
+                    ForEach(0..<splitOptions.count){
+                        Text(self.splitOptions[$0])
+                    }
                 }
-                NavigationLink (
-                    destination: PercentageSplit()) {
-                    Text ("Percentage Split")
-                }
-                NavigationLink (
-                    destination: ItemizedSplit()) {
-                    Text ("Itemized Split")
-                }
-                NavigationLink (
-                    destination: CustomSplit()) {
-                        Text("Custom Split")
-                }
+                Text("You chose \(splitOptions[selectedSplit]).")
             }
+        .navigationBarTitle("Split The Bill")
         }
     }
 }
